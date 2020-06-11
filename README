@@ -1,0 +1,14 @@
+The game of life is a computational algorithm designed by the mathematician John Horton Conway in 1970, in which the dynamics of a population of living creatures is simulated. 
+
+A matrix of any size nxm is initialized with values 0 (dead cell) or 1 (living cell). 
+At each step, the number of neighbours to each cell is counted, and the following rules apply:
+1) If the cell is alive but the number of neighbours is below 2 (underpopulation), the cell will die.
+2) If the cell is alive but the number of neighbours is above 3 (overpopulation), the cell will die.
+3) f the cell is dead and the number of neighbours is exactly 3, it will become alive (reproduction). 
+4) In any other case, the cell remains as it is.
+
+By following these simple rules, we can see that a dynamics takes place in the simulation which resembles that 
+of a living population. In addition, some interesting emerging behaviours appear, such as gliders, 
+a sort of nomad groups which keep on moving in a straight line if nothing perturbs them. 
+
+In my case, I chose a square matrix, whose size is hard coded. Periodic boundary conditions were applied, so that in principle an infinite universe is simulated, made of infinite copies of the unit cell. 
